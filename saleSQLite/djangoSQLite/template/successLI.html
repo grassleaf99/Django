@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success LI</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <h2>Hello {{request.user.first_name}}. You log in successful</h2>
+        <form action="logout" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Log out">
+        </form>
+    {% else %}
+        <h2> You are not sign in. Go to 'sale/login' to sign in </h2>
+    {% endif %}
+</body>
+</html>
