@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Email</title>
+    <style>
+        .testClassContent{
+            padding : 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="testEmailForm" method="post">
+        {% csrf_token %}
+
+        <table>
+            {% for field in se %}
+                <tr>
+                    <td> {{field.label}} </td>
+                    <td> {{field}} </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

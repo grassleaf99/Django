@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Post</title>
+</head>
+<body>
+    <form action="testAddForm" method="post">
+        {% csrf_token %}
+
+        <!--{{aFM}}-->
+
+        <p>{{aFM.title}}</p>
+        <p>{{aFM.content}}</p>
+        <p>{{aFM.email}}</p>
+        <p>{{aFM.time_create}}</p>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>

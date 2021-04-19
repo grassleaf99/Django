@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Database</title>
+</head>
+<body>
+    {% if questions or choices %}
+        {% if questions %}
+            <h2>All questions:</h2>
+            {% for qs in questions %}
+                <a href="{% url 'appweb:detqs' qs.id %}"><p> {{qs.question_text}} </p></a> <!-- detqs la name cua duong dan aW/qs/<int:question_id> -->
+            {% endfor %}
+        {% endif %}
+        {% if choices %}
+            <h2>All choices:</h2>
+            {% for choice in choices %}
+                <p> {{choice.choice_text}}: {{choice.vote}} vote </p>
+            {% endfor %}
+        {% endif %}
+    {% else %}
+        <h2>Database empty</h2>
+    {% endif %}
+</body>
+</html>

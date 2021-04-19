@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+</head>
+<body>
+    <h2>{{qs.question_text}}</h2>
+    <form method="post" action="{% url 'appweb:answer' %}"> <!-- answer la name cua duong dan aW/as -->
+            {% csrf_token %}
+        <ul>
+            {% for choice in qs.choice_set.all %}
+                <li>
+                    <input type="radio" value="{{ choice.id }}" name="mychoice"> {{ choice.choice_text }}
+                </li>
+            {% endfor %}
+            <p><input type="submit" value="Send answer"></p>
+        </ul>
+    </form>
+</body>
+</html>
