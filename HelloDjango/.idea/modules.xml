@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Banhang/.idea/Banhang.iml" filepath="$PROJECT_DIR$/../Banhang/.idea/Banhang.iml" />
       <module fileurl="file://$PROJECT_DIR$/../AddNum/.idea/Calculator.iml" filepath="$PROJECT_DIR$/../AddNum/.idea/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/HelloDjango.iml" filepath="$PROJECT_DIR$/.idea/HelloDjango.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../buaBtlTMDT/.idea/btlTMDT.iml" filepath="$PROJECT_DIR$/../buaBtlTMDT/.idea/btlTMDT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../saleSQLite/.idea/saleSQLite.iml" filepath="$PROJECT_DIR$/../saleSQLite/.idea/saleSQLite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shopping/.idea/shopping.iml" filepath="$PROJECT_DIR$/../shopping/.idea/shopping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webDjango/.idea/webDjango.iml" filepath="$PROJECT_DIR$/../webDjango/.idea/webDjango.iml" />
     </modules>
   </component>
 </project>

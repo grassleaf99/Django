@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+</head>
+<body>
+    {% if carts %}
+        <ol>
+            {% for cart in carts %}
+                <li>
+                    {{cart.name}}
+                    <br>
+                    {% if cart.item_set.all %}
+                        <ul>
+                            {% for item in cart.item_set.all %}
+                                <li>
+                                    {{item.name}}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        No item in {{cart.name}}
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        No cart in db
+    {% endif %}
+</body>
+</html>

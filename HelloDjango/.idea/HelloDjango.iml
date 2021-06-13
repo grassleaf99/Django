@@ -5,5 +5,16 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Calculator" />
+    <orderEntry type="module" module-name="Banhang" />
+    <orderEntry type="module" module-name="webDjango" />
+    <orderEntry type="module" module-name="saleSQLite" />
+    <orderEntry type="module" module-name="shopping" />
+    <orderEntry type="module" module-name="btlTMDT" />
+    <orderEntry type="module" module-name="btlTMDT" />
+    <orderEntry type="module" module-name="btlTMDT" />
+    <orderEntry type="module" module-name="btlTMDT" />
+    <orderEntry type="module" module-name="btlTMDT" />
+    <orderEntry type="module" module-name="btlTMDT" />
+    <orderEntry type="module" module-name="btlTMDT" />
   </component>
 </module>
